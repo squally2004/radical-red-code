@@ -1,6 +1,7 @@
 export const Scripts: ModdedBattleScriptsData = {
 	inherit: 'gen8',
 	init() {
+		/*
 		for (const id in this.data.Pokedex) {
 			const pokemon = this.modData('Pokedex', id);
 			for (const [key, ability] of Object.entries(pokemon.abilities)) {
@@ -10,6 +11,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				}
 			}
 		}
+*/
 	},
 	actions: {
 		canMegaEvo(pokemon: Pokemon) {
@@ -124,7 +126,7 @@ export const Scripts: ModdedBattleScriptsData = {
 			let attackStat: StatIDExceptHP = move.overrideOffensiveStat || (isPhysical ? 'atk' : 'spa');
 			const defenseStat: StatIDExceptHP = move.overrideDefensiveStat || (isPhysical ? 'def' : 'spd');
 
-			const statTable = {atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe'};
+			const statTable = { atk: 'Atk', def: 'Def', spa: 'SpA', spd: 'SpD', spe: 'Spe' };
 
 			let atkBoosts = attacker.boosts[attackStat];
 			let defBoosts = defender.boosts[defenseStat];
