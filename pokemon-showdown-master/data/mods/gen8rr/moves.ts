@@ -2263,7 +2263,7 @@ export const Moves: { [k: string]: ModdedMoveData } = {
 		onEffectiveness(typeMod, target, type) {
 			if (type === 'Ground') return 1;
 		},
-//make sure to add a flying immunity
+		//make sure to add a flying immunity
 		target: "normal",
 		type: "Fire",
 		contestType: "Beautiful",
@@ -2299,12 +2299,12 @@ export const Moves: { [k: string]: ModdedMoveData } = {
 		zMove: { effect: 'clearnegativeboost' },
 		contestType: "Tough",
 	},
-	squall: {
+	stormsquall: {
 		num: 432,
-		accuracy: true,
-		basePower: 0,
-		category: "Status",
-		name: "Defog",
+		accuracy: 50,
+		basePower: 100,
+		category: "Special",
+		name: "Storm Squall",
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, reflectable: 1, mirror: 1, bypasssub: 1 },
@@ -2338,5 +2338,23 @@ export const Moves: { [k: string]: ModdedMoveData } = {
 		type: "Flying",
 		zMove: { boost: { accuracy: 1 } },
 		contestType: "Cool",
+	},
+	deltastorm: {
+		num: 577,
+		accuracy: 100,
+		basePower: 140,
+		category: "Special",
+		name: "Delta Storm",
+		pp: 10,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, heal: 1, special: 1 },
+		drain: [1, 4],
+		onEffectiveness(typeMod, target, type) {
+			if (type === 'Ghost') return 1;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		contestType: "Cute",
 	},
 };

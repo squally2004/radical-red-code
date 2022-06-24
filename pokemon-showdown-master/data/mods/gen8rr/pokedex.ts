@@ -9122,11 +9122,25 @@ export const Pokedex: { [k: string]: ModdedSpeciesData } = {
 		types: ["Bug", "Dragon"],
 		baseStats: { hp: 120, atk: 90, def: 120, spa: 130, spd: 100, spe: 40 },
 		abilities: { 0: "Mega Launcher", 1: "Toxicant", H: "Unyielding" },
-		heightm: 456,
+		heightm: 8,
 		weightkg: 19.2,
 		color: "Green",
 		evoLevel: 52,
 		eggGroups: ["Dragon", "Monster"],
 		gen: 4,
+		tier: "OU"
+	},
+	discaia: {
+		num: -63,
+		name: "Discaia",
+		types: ["Steel", "Normal"],
+		baseStats: { hp: 110, atk: 130, def: 130, spa: 130, spd: 110, spe: 70 },
+		abilities: { 0: "Magnet Pull", 1: "Aluminum Alloy", H: "Miracle Guard" },
+		heightm: 30.48,
+		weightkg: 61325.688,
+		color: "White",
+		eggGroups: ["Undiscovered"],
+		gen: 8,
+		tier: "Uber"
 	},
 };

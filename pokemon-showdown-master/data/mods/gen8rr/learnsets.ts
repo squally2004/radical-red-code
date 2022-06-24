@@ -701,6 +701,7 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 			solarbeam: ["8M"],
 			strugglebug: ["8M"],
 			stunspore: ["8L13"],
+			stormsquall: [],
 			substitute: ["8M"],
 			sunnyday: ["8M"],
 			supersonic: ["8L23"],
@@ -918,6 +919,7 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 			sleeptalk: ["8M"],
 			snore: ["8T"],
 			steelwing: ["8M"],
+			stormsquall: [],
 			substitute: ["8M"],
 			sunnyday: ["8M"],
 			swagger: ["8M"],
@@ -42349,6 +42351,7 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 			sleeptalk: ["8M"],
 			snore: ["8T"],
 			steelwing: ["8M"],
+			stormsquall: [],
 			substitute: ["8M"],
 			surf: ["8M"],
 			swagger: ["8M"],
@@ -45191,6 +45194,7 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 			snore: ["8T"],
 			steelwing: ["8M"],
 			strength: ["8M"],
+			stormsquall: [],
 			substitute: ["8M"],
 			sunnyday: ["8M"],
 			superpower: ["8L0", "8L1", "8M", "8T"],
@@ -52358,6 +52362,7 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 			smackdown: ["8M"],
 			snore: ["8T"],
 			steelwing: ["8M"],
+			stormsquall: [],
 			substitute: ["8M"],
 			sunnyday: ["8M"],
 			supersonic: ["8L13"],
@@ -62132,7 +62137,7 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 	},
 	drifblimdelta: {
 		learnset: {
-			achillesheel: [], acid: [], acrobatics: [], aerialace: [], aircutter: [], airslash: ["8M"], allyswitch: [], attract: [], batonpass: [], bind: [], bodyslam: [], bounce: [], brushfire: [], burningjealousy: ["8T"], burnup: ["7L001"], calmmind: [], captivate: [], confide: [], constrict: [], doubleteam: [], echoedvoice: [], ember: [], endure: [], explosion: [], facade: [], fireblast: [], firelash: ["7L001"], firespin: ["8M"], flameburst: [], flamecharge: [], flamethrower: [], fly: [], frustration: [], gigaimpact: [], gust: [], gyroball: [], heatwave: [], helpinghand: [], hiddenpower: [], hurricane: [], hyperbeam: [], hypervoice: [], incinerate: [], inferno: [], jetstream: [], magiccoat: [], mimic: [], minimize: [], mysticalfire: ["8M"], ominouswind: [], overheat: [], painsplit: [], protect: [], psychup: [], reflect: [], rest: [], "return": [], roost: [], round: [], safeguard: [], scald: [], secretpower: [], selfdestruct: [], shockwave: [], signalbeam: [], skyattack: [], skydrop: [], sleeptalk: [], sludgebomb: [], snore: [], solarbeam: [], stockpile: [], substitute: [], sunnyday: [], swagger: [], tailwind: [], thunderwave: [], toxic: [], trickroom: [], twister: [], uproar: [], uturn: [], vacuumwave: [], voltswitch: [], weatherball: ["8M"], willowisp: [], workup: [], zenheadbutt: []
+			achillesheel: [], acid: [], acrobatics: [], aerialace: [], aircutter: [], airslash: ["8M"], allyswitch: [], attract: [], batonpass: [], bind: [], bodyslam: [], bounce: [], brushfire: [], burningjealousy: ["8T"], burnup: ["7L001"], calmmind: [], captivate: [], confide: [], constrict: [], doubleteam: [], echoedvoice: [], ember: [], endure: [], explosion: [], facade: [], fireblast: [], firelash: ["7L001"], firespin: ["8M"], flameburst: [], flamecharge: [], flamethrower: [], fly: [], frustration: [], gigaimpact: [], gust: [], gyroball: [], heatwave: [], helpinghand: [], hiddenpower: [], hurricane: [], hyperbeam: [], hypervoice: [], incinerate: [], inferno: [], jetstream: [], magiccoat: [], mimic: [], minimize: [], mysticalfire: ["8M"], ominouswind: [], overheat: [], painsplit: [], protect: [], psychup: [], reflect: [], rest: [], "return": [], roost: [], round: [], safeguard: [], scald: [], secretpower: [], selfdestruct: [], shockwave: [], signalbeam: [], skyattack: [], skydrop: [], sleeptalk: [], sludgebomb: [], snore: [], solarbeam: [], stockpile: [], stormsquall: [], substitute: [], sunnyday: [], swagger: [], tailwind: [], thunderwave: [], toxic: [], trickroom: [], twister: [], uproar: [], uturn: [], vacuumwave: [], voltswitch: [], weatherball: ["8M"], willowisp: [], workup: [], zenheadbutt: []
 		}
 	},
 	grimerdelta: {
@@ -62407,7 +62412,7 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 	},
 	raichudelta: {
 		learnset: {
-			achillesheel: [], acid: [], acrobatics: [], aerialace: [], agility: ["8M"], aircutter: [], aquatail: [], attract: [], bodyslam: [], bounce: [], brickbreak: [], captivate: [], confide: [], counter: [], covet: [], dazzlinggleam: [], defog: [], doubleteam: [], drainingkiss: ["8M"], drainpunch: [], dualwingbeat: ["8T"], dynamicpunch: [], echoedvoice: [], encore: ["8M"], endure: [], facade: [], faketears: ["8M"], flamecharge: [], flash: [], fling: [], fly: [], focusblast: [], focuspunch: [], frustration: [], gigaimpact: [], grassknot: [], gust: [], headbutt: [], healbell: [], heatwave: [], helpinghand: [], hiddenpower: [], hurricane: ["8M"], hyperbeam: [], icepunch: [], icywind: [], irontail: [], jetstream: [], knockoff: [], lightscreen: [], lowkick: [], magiccoat: [], megakick: [], megapunch: [], mimic: [], mistyterrain: ["8M"], moonblast: [], ominouswind: [], playrough: ["8M"], poweruppunch: [], protect: [], psychup: [], quickattack: [], raindance: [], rapidspin: [], reflect: [], rest: [], retaliate: [], "return": [], rocksmash: [], roost: [], round: [], safeguard: [], secretpower: [], seismictoss: [], signalbeam: [], silverwind: [], skyattack: [], skydrop: [], sleeptalk: [], snatch: [], snore: [], steelwing: [], strength: [], substitute: [], swagger: [], swift: [], tailslap: ["8M"], tailwind: [], taunt: [], tearfullook: ["7L001"], terrainpulse: ["8T"], thief: [], thunderpunch: [], thunderwave: [], toxic: [], twister: [], uturn: [], weatherball: ["8M"]
+			achillesheel: [], acid: [], acrobatics: [], aerialace: [], agility: ["8M"], aircutter: [], aquatail: [], attract: [], bodyslam: [], bounce: [], brickbreak: [], captivate: [], confide: [], counter: [], covet: [], dazzlinggleam: [], defog: [], doubleteam: [], drainingkiss: ["8M"], drainpunch: [], dualwingbeat: ["8T"], dynamicpunch: [], echoedvoice: [], encore: ["8M"], endure: [], facade: [], faketears: ["8M"], flamecharge: [], flash: [], fling: [], fly: [], focusblast: [], focuspunch: [], frustration: [], gigaimpact: [], grassknot: [], gust: [], headbutt: [], healbell: [], heatwave: [], helpinghand: [], hiddenpower: [], hurricane: ["8M"], hyperbeam: [], icepunch: [], icywind: [], irontail: [], jetstream: [], knockoff: [], lightscreen: [], lowkick: [], magiccoat: [], megakick: [], megapunch: [], mimic: [], mistyterrain: ["8M"], moonblast: [], ominouswind: [], playrough: ["8M"], poweruppunch: [], protect: [], psychup: [], quickattack: [], raindance: [], rapidspin: [], reflect: [], rest: [], retaliate: [], "return": [], rocksmash: [], roost: [], round: [], safeguard: [], secretpower: [], seismictoss: [], signalbeam: [], silverwind: [], skyattack: [], skydrop: [], sleeptalk: [], snatch: [], snore: [], steelwing: [], strength: [], stormsquall: [], substitute: [], swagger: [], swift: [], tailslap: ["8M"], tailwind: [], taunt: [], tearfullook: ["7L001"], terrainpulse: ["8T"], thief: [], thunderpunch: [], thunderwave: [], toxic: [], twister: [], uturn: [], weatherball: ["8M"]
 		}
 	},
 	aipomdelta: {
@@ -63220,6 +63225,7 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 			steelwing: ["8M", "7M"],
 			stringshot: ["8L1", "7L1", "5L1"],
 			strugglebug: ["8L1", "5M"],
+			stormsquall: [],
 			substitute: ["8M", "7M", "5M"],
 			sunnyday: ["8M", "8L1", "7M", "7L1", "5M", "5L1"],
 			surf: ["8M", "7M", "5M"],
@@ -68273,6 +68279,47 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 			scorchearth: [],
 			xscizor: [],
 			zapcannon: [],
+		},
+	},
+	discaia: {
+		learnset: {
+			defensecurl: [],
+			deltastorm: [],
+			flashcannon: [],
+			irontail: [],
+			gyroball: [],
+			hypervoice: [],
+			boomburst: [],
+			steelroller: [],
+			steelbeam: [],
+			autotomize: [],
+			skullbash: [],
+			focusblast: [],
+			earthpower: [],
+			earthquake: [],
+			heavyslam: [],
+			selfdestruct: [],
+			strength: [],
+			flamecharge: [],
+			followme: [],
+			grassyterrain: [],
+			ingrain: [],
+			magnetrise: [],
+			lockon: [],
+			metalsound: [],	
+			purify: [],
+			raindance: [],
+			roar: [],
+			sharpen: [],
+			shiftgear: [],
+			spikes: [],
+			tailwind: [],
+			electroweb: [],
+			frostbreath: [],
+			psychocut: [],
+			thunderbolt: [],
+			wildcharge: [],
+			zapcannon: [],
 		}
-	}
+	},
 };
