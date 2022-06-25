@@ -1095,6 +1095,28 @@ export const Items: { [k: string]: ModdedItemData } = {
 		gen: 8,
 		desc: "If held by an Eternatus, this item triggers its Primal Reversion in battle.",
 	},
+	speedorb: {
+		name: "Speed Orb",
+		spritenum: 476,
+		fling: {
+			basePower: 80,
+		},
+		onModifySpe(this, speed, pokemon) {
+			return this.chainModify([5324, 4096]);
+		},
+		onAfterMoveSecondarySelf(source, target, move) {
+			if (source && source !== target && move && move.category !== 'Status') {
+				this.damage(source.baseMaxhp / 10, source, source, this.dex.items.get('speedorb'));
+			}
+		},
+		onResidualOrder: 28,
+		onResidualSubOrder: 3,
+		onResidual(pokemon) {
+			this.damage(pokemon.baseMaxhp / 8);
+		},
+		num: 288,
+		gen: 4,
+	},
 	// mega items i got to add
 	grimmsnarlite: {
 		name: "Grimmsnarlite",
