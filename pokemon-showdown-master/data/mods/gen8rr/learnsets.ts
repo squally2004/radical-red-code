@@ -68283,6 +68283,7 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 	},
 	discaia: {
 		learnset: {
+			acid: [],
 			defensecurl: [],
 			deltastorm: [],
 			flashcannon: [],
@@ -68318,6 +68319,8 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 			frostbreath: [],
 			psychocut: [],
 			thunderbolt: [],
+			scorchearth: [],
+			stormsquall: [],
 			wildcharge: [],
 			zapcannon: [],
 		}

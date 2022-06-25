@@ -1,7 +1,7 @@
 export const Scripts: ModdedBattleScriptsData = {
-	inherit: 'gen8',
+	inherit: 'gen8rr',
 	init() {
-		/*
+		
 		for (const id in this.data.Pokedex) {
 			const pokemon = this.modData('Pokedex', id);
 			for (const [key, ability] of Object.entries(pokemon.abilities)) {
@@ -11,7 +11,7 @@ export const Scripts: ModdedBattleScriptsData = {
 				}
 			}
 		}
-*/
+
 	},
 	actions: {
 		canMegaEvo(pokemon: Pokemon) {
