@@ -1,5 +1,5 @@
 export const Scripts: ModdedBattleScriptsData = {
-	inherit: 'gen8rr',
+	inherit: 'gen8',
 	init() {
 		
 		for (const id in this.data.Pokedex) {

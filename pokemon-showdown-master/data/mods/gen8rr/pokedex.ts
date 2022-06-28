@@ -9143,4 +9143,20 @@ export const Pokedex: { [k: string]: ModdedSpeciesData } = {
 		gen: 8,
 		tier: "Uber"
 	},
+	deltasceptilemega: {
+		num: 571,
+		name: "Delta-Sceptile-Mega",
+		baseSpecies: "Delta-Sceptile",
+		forme: "Mega",
+		types: ["Fighting", "Dragon"],
+		genderRatio: { M: 0.875, F: 0.125 },
+		baseStats: { hp: 70, atk: 135, def: 95, spa: 105, spd: 85, spe: 140 },
+		abilities: { "0": "Black Belt" },
+		weightkg: 81.1,
+		heightm: 1.2,
+		color: "Red",
+		eggGroups: ["Undiscovered"],
+		requiredItem: "Delta Sceptileite",
+		tier: "UU",
+	},
 };

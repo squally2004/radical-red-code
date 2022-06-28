@@ -1704,4 +1704,25 @@ export const Abilities: { [k: string]: ModdedAbilityData } = {
 		rating: 5,
 		num: 25,
 	},
+	blackbelt: {
+		onBasePowerPriority: 23,
+		onBasePower(basePower, attacker, defender, move) {
+			if (move.flags['punch']) {
+				this.debug('Iron Fist boost');
+				return this.chainModify([5325, 4096]);
+			}
+			if (move.flags['kick']) {
+				this.debug('Striker Boost');
+				return this.chainModify([5325, 4096]);
+			}
+		},
+		onModifyAtk(atk, pokemon) {
+			if (pokemon.status) {
+				return this.chainModify(1.5);
+			}
+		},
+		name: "Black Belt",
+		rating: 4,
+		num: 89,
+	},
 }
