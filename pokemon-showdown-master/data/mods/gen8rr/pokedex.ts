@@ -1300,6 +1300,7 @@ export const Pokedex: { [k: string]: ModdedSpeciesData } = {
 	},
 	kingdra: {
 		inherit: true,
+		abilities: { 0: "Swift Swim", 1: "Sniper", H: "King of Atlantis" },
 		evoType: "useItem",
 		evoItem: "Prism Scale",
 		items: { 5: "Dragon Scale", 50: "None" },
