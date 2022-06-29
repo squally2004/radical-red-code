@@ -18626,6 +18626,7 @@ export const Learnsets: { [k: string]: ModdedLearnsetData } = {
 			icebeam: ["8M"],
 			icywind: ["8T"],
 			ironhead: ["8T"],
+			kingstrident: [],
 			laserfocus: ["8T"],
 			leer: ["8L9"],
 			liquidation: ["8T"],

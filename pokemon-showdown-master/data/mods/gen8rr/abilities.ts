@@ -1725,4 +1725,37 @@ export const Abilities: { [k: string]: ModdedAbilityData } = {
 		rating: 4,
 		num: 89,
 	},
+	kingofatlantis: {
+		desc: "On switch-in, this Pokemon summons Rain Dance for 5 turns, plus 1 additional turn for each Water-type teammate. This Pokemon also has the effects of Dry Skin.",
+		shortDesc: "Drizzle + Dry Skin; +1 turn of rain for each Water-type teammate.",
+		onStart(source) {
+			this.field.setWeather('raindance', source);
+			// See conditions.ts for weather modifications.
+		},
+		onTryHit(target, source, move) {
+			if (target !== source && move.type === 'Water') {
+				if (!this.heal(target.baseMaxhp / 4)) {
+					this.add('-immune', target, '[from] ability: King of Atlantis');
+				}
+				return null;
+			}
+		},
+		onFoeBasePowerPriority: 17,
+		onFoeBasePower(basePower, attacker, defender, move) {
+			if (this.effectState.target !== defender) return;
+			if (move.type === 'Fire') {
+				return this.chainModify(1.25);
+			}
+		},
+		onWeather(target, source, effect) {
+			if (target.hasItem('utilityumbrella')) return;
+			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
+				this.heal(target.baseMaxhp / 8);
+			} else if (effect.id === 'sunnyday' || effect.id === 'desolateland') {
+				this.damage(target.baseMaxhp / 8, target, target);
+			}
+		},
+		name: "King of Atlantis",
+		gen: 8,
+	},
 }

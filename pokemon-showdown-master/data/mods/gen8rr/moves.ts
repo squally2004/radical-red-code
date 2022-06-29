@@ -2357,4 +2357,31 @@ export const Moves: { [k: string]: ModdedMoveData } = {
 		type: "Normal",
 		contestType: "Cute",
 	},
+	kingstrident: {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Raises the user's Special Attack by 1 stage and Speed by 2 stages.",
+		shortDesc: "Gives user +1 SpA and +2 Spe.",
+		name: "King's Trident",
+		gen: 8,
+		pp: 10,
+		priority: 0,
+		flags: {snatch: 1},
+		onTryMove() {
+			this.attrLastMove('[still]');
+		},
+		onPrepareHit(target) {
+			this.add('-anim', target, 'Dragon Dance', target);
+		},
+		self: {
+			boosts: {
+				spa: 1,
+				spe: 2,
+			},
+		},
+		secondary: null,
+		target: "self",
+		type: "Water",
+	},
 };
