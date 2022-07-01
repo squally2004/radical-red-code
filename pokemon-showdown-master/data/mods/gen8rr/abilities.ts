@@ -1758,4 +1758,40 @@ export const Abilities: { [k: string]: ModdedAbilityData } = {
 		name: "King of Atlantis",
 		gen: 8,
 	},
+	inhibitation: {
+		onStart(pokemon) {
+			let activated = false;
+			for (const target of pokemon.adjacentFoes()) {
+				if (!activated) {
+					this.add('-ability', pokemon, 'Inhibitation', 'boost');
+					activated = true;
+				}
+				if (target.volatiles['substitute']) {
+					this.add('-immune', target);
+				} else {
+					this.boost({ spa: -1 }, target, pokemon, null, true);
+				}
+			}
+		},
+		name: "Inhibitation",
+		rating: 3.5,
+		num: 22,
+	},
+	allseeingeye: {
+		onSourceModifyAccuracyPriority: -1,
+		onSourceModifyAccuracy(accuracy) {
+			if (typeof accuracy !== 'number') return;
+			this.debug('compoundeyes - enhancing accuracy');
+			return this.chainModify([5325, 4096]);
+		},
+		onModifyDamage(damage, source, target, move) {
+			if (target.getMoveHitData(move).typeMod < 0) {
+				this.debug('Tinted Lens boost');
+				return this.chainModify(2);
+			}
+		},
+		name: "All Seeing Eye",
+		rating: 3,
+		num: 14,
+	},
 }
