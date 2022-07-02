@@ -135,6 +135,19 @@ export const Moves: { [k: string]: ModdedMoveData } = {
 	diamondstorm: {
 		inherit: true,
 		category: "Special",
+		onModifyMove(move, pokemon, target) {
+			if (!target) return;
+			const atk = pokemon.getStat('atk', false, true);
+			const spa = pokemon.getStat('spa', false, true);
+			const def = target.getStat('def', false, true);
+			const spd = target.getStat('spd', false, true);
+			const physical = Math.floor(Math.floor(Math.floor(Math.floor(2 * pokemon.level / 5 + 2) * 90 * atk) / def) / 50);
+			const special = Math.floor(Math.floor(Math.floor(Math.floor(2 * pokemon.level / 5 + 2) * 90 * spa) / spd) / 50);
+			if (physical > special || (physical === special && this.random(2) === 0)) {
+				move.category = 'Physical';
+				move.flags.contact = 1;
+			}
+		},
 	},
 	doublekick: {
 		inherit: true,
@@ -657,6 +670,19 @@ export const Moves: { [k: string]: ModdedMoveData } = {
 		secondary: {
 			chance: 10,
 			status: 'psn',
+		},
+		onModifyMove(move, pokemon, target) {
+			if (!target) return;
+			const atk = pokemon.getStat('atk', false, true);
+			const spa = pokemon.getStat('spa', false, true);
+			const def = target.getStat('def', false, true);
+			const spd = target.getStat('spd', false, true);
+			const physical = Math.floor(Math.floor(Math.floor(Math.floor(2 * pokemon.level / 5 + 2) * 90 * atk) / def) / 50);
+			const special = Math.floor(Math.floor(Math.floor(Math.floor(2 * pokemon.level / 5 + 2) * 90 * spa) / spd) / 50);
+			if (physical > special || (physical === special && this.random(2) === 0)) {
+				move.category = 'Physical';
+				move.flags.contact = 1;
+			}
 		},
 		target: "normal",
 		type: "Poison",
